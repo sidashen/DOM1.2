@@ -1,7 +1,7 @@
 var greenBlock = document.getElementById("green-block");  
 var yellowBlock = document.getElementById("yellow-block"); 
 
-function dragItem(e) {  
+greenBlock.onmousedown = function dragItem(e) {  
   var e = e || window.event;  
 
   greenBlock.startX = e.clientX - greenBlock.offsetLeft;  
