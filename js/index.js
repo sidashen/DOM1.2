@@ -1,6 +1,7 @@
+var greenBlock = document.getElementById("green-block");  
+var yellowBlock = document.getElementById("yellow-block"); 
+
 function dragItem(e) {  
-  var greenBlock = document.getElementById("green-block");  
-  var yellowBlock = document.getElementById("yellow-block"); 
   var e = e || window.event;  
 
   greenBlock.startX = e.clientX - greenBlock.offsetLeft;  
@@ -13,8 +14,6 @@ function dragItem(e) {
 
 function handleMouseMove() {
 document.onmousemove = function(e) {  
-  var greenBlock = document.getElementById("green-block");  
-  var yellowBlock = document.getElementById("yellow-block");
   var e = e || window.event;  
 
   greenBlock.style.left = e.clientX - greenBlock.startX + "px";  
